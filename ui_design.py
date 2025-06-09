@@ -144,15 +144,6 @@ class SonicCipherApp(QMainWindow):
         header_layout.addLayout(title_layout)
         header_layout.addStretch()
         
-        # Tombol tema
-        self.theme_button = QPushButton()
-        if os.path.exists("resources/light_mode.png"):
-            self.theme_button.setIcon(QIcon("resources/light_mode.png"))
-        self.theme_button.setIconSize(QSize(24, 24))
-        self.theme_button.setToolTip("Beralih ke Mode Gelap")
-        self.theme_button.clicked.connect(self.toggle_theme)
-        self.theme_button.setFixedSize(40, 40)
-        header_layout.addWidget(self.theme_button)
         
         main_layout.addLayout(header_layout)
         
@@ -1677,25 +1668,6 @@ class SonicCipherApp(QMainWindow):
             QMessageBox.critical(self, "Error", f"Terjadi kesalahan saat pengujian: {str(e)}")
             self.statusBar().showMessage("Pengujian gagal karena error", 5000)
             return False
-    
-    def toggle_theme(self):
-        """Beralih antara tema terang dan gelap"""
-        self.is_dark_mode = not self.is_dark_mode
-        
-        if self.is_dark_mode:
-            set_dark_theme(self)
-            self.theme_button.setToolTip("Beralih ke Mode Terang")
-            if os.path.exists("resources/dark_mode.png"):
-                self.theme_button.setIcon(QIcon("resources/dark_mode.png"))
-            self.statusBar().showMessage("Tema gelap diaktifkan", 3000)
-        else:
-            # Reset ke tema default
-            app = QApplication.instance()
-            app.setStyle('Fusion')
-            self.theme_button.setToolTip("Beralih ke Mode Gelap")
-            if os.path.exists("resources/light_mode.png"):
-                self.theme_button.setIcon(QIcon("resources/light_mode.png"))
-            self.statusBar().showMessage("Tema terang diaktifkan", 3000)
     
     def clear_inputs(self):
         """Membersihkan semua input"""
