@@ -1,6 +1,6 @@
 # SonicCipher
 
-![SonicCipher Logo](https://github.com/user-attachments/assets/1441e5c4-c0cc-4cea-90e2-02cb31ab5cf0)
+![logo (1)](https://github.com/user-attachments/assets/52a1559f-1369-4199-98e8-7412dc336124)
 
 ## Aplikasi Kriptografi Teks ke Suara dengan Algoritma FSAE
 
