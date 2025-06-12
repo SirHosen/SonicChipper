@@ -1,6 +1,8 @@
 # SonicCipher
 
+<p align="center">
 ![logo (1)](https://github.com/user-attachments/assets/52a1559f-1369-4199-98e8-7412dc336124)
+</p>
 
 ## Aplikasi Kriptografi Teks ke Suara dengan Algoritma FSAE
 
@@ -80,7 +82,7 @@ File .exe akan tersedia di folder `dist`.
 5. Gunakan tombol "Putar Suara" untuk mendengarkan hasil
 6. Simpan file audio dengan tombol "Simpan Suara"
 
-![Encryption Tab](https://placeholder-for-encryption-tab.png)
+
 
 ### Dekripsi Suara ke Teks
 
