@@ -6,7 +6,7 @@
 
 SonicCipher adalah aplikasi kriptografi inovatif yang mengubah teks menjadi pola suara menggunakan algoritma Frequency-Shift Audio Encryption (FSAE). Berbeda dengan metode kriptografi konvensional yang menghasilkan teks terenkripsi, SonicCipher menghasilkan file audio yang berisi pesan rahasia, menggabungkan konsep kriptografi dan steganografi.
 
-![SonicCipher Screenshot](https://placeholder-for-screenshot.png)
+![Screenshot 2025-06-13 010547](https://github.com/user-attachments/assets/9a4c1de7-7a53-48f3-87af-3638d5ebe9af)
 
 ## Fitur Utama
 
