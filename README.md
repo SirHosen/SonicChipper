@@ -30,7 +30,9 @@ SonicCipher mengimplementasikan algoritma Frequency-Shift Audio Encryption (FSAE
 4. Frekuensi-frekuensi ini dikombinasikan untuk membuat pola suara unik
 5. Durasi setiap nada bervariasi berdasarkan posisi karakter dalam pesan
    
-![Gemini_Generated_Image_66boza66boza66bo (1)](https://github.com/user-attachments/assets/45b74a78-1198-4046-9f83-0e33e1bd93c4)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45b74a78-1198-4046-9f83-0e33e1bd93c4" alt="diagram" width="300"/>
+</p>
 
 ## Instalasi
 
