@@ -231,7 +231,7 @@ Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanj
 
 SirHosen - hoseaoktarivanes@gmail.com
 
-Link Proyek: [https://github.com/yourusername/SonicCipher](https://github.com/SirHosen/SonicChipper)
+Link Proyek: [https://github.com/SirHosen/SonicChippe](https://github.com/SirHosen/SonicChipper)
 
 ## Pengakuan
 
