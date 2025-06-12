@@ -181,16 +181,6 @@ Aplikasi ini menggunakan pendekatan **modular 3-layer**:
 
 ---
 
-## 🚀 Roadmap Pengembangan
-
-* Peningkatan algoritma tanpa metadata
-* Implementasi versi mobile (Android/iOS)
-* Real-time audio transmission
-* Optimasi ukuran file audio
-* UI/UX yang lebih dinamis
-
----
-
 ## 🔒 Lisensi
 
 Proyek ini didistribusikan di bawah Lisensi **MIT**. Lihat file `LICENSE` untuk detail.
