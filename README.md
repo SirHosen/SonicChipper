@@ -1,7 +1,9 @@
 # SonicCipher
 
-<img src="![logo (1)](https://github.com/user-attachments/assets/5a156943-9134-4653-add0-2c40aabf4116)
-" alt="Description of your image" align="center">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a156943-9134-4653-add0-2c40aabf4116" alt="logo" width="300"/>
+</p>
+
 
 ## Aplikasi Kriptografi Teks ke Suara dengan Algoritma FSAE
 
