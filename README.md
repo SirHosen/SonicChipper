@@ -40,7 +40,7 @@ SonicCipher mengimplementasikan algoritma Frequency-Shift Audio Encryption (FSAE
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/yourusername/SonicCipher.git
+   git clone git@github.com:SirHosen/SonicChipper.git
    cd SonicCipher
    ```
 
@@ -208,9 +208,9 @@ Proses enkripsi FSAE secara matematis dapat dirumuskan sebagai berikut:
 Kontribusi untuk pengembangan SonicCipher sangat diterima. Untuk berkontribusi:
 
 1. Fork repositori
-2. Buat branch untuk fitur baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
+2. Buat branch untuk fitur baru (`git checkout -b feature/New`)
+3. Commit perubahan Anda (`git commit -m 'Add some New'`)
+4. Push ke branch (`git push origin feature/New`)
 5. Buka Pull Request
 
 ## Pengembangan Lanjutan
@@ -229,7 +229,7 @@ Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanj
 
 ## Kontak
 
-[Nama Anda] - [Email Anda]
+SirHosen - hoseaoktarivanes@gmail.com
 
 Link Proyek: [https://github.com/yourusername/SonicCipher](https://github.com/yourusername/SonicCipher)
 
@@ -242,5 +242,3 @@ Link Proyek: [https://github.com/yourusername/SonicCipher](https://github.com/yo
 - [Pygame](https://www.pygame.org/)
 
 ---
-
-**Catatan**: Ganti placeholder gambar dengan path aktual ke gambar Anda. Tambahkan screenshot aplikasi, diagram arsitektur, dan ilustrasi algoritma untuk README yang lebih informatif dan menarik.
