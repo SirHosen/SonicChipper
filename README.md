@@ -1,249 +1,204 @@
 # SonicCipher
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a156943-9134-4653-add0-2c40aabf4116" alt="logo" width="300"/>
+  <img src="https://github.com/user-attachments/assets/5a156943-9134-4653-add0-2c40aabf4116" alt="SonicCipher Logo" width="300"/>
 </p>
 
-
-## Aplikasi Kriptografi Teks ke Suara dengan Algoritma FSAE
-
-SonicCipher adalah aplikasi kriptografi inovatif yang mengubah teks menjadi pola suara menggunakan algoritma Frequency-Shift Audio Encryption (FSAE). Berbeda dengan metode kriptografi konvensional yang menghasilkan teks terenkripsi, SonicCipher menghasilkan file audio yang berisi pesan rahasia, menggabungkan konsep kriptografi dan steganografi.
-
-![Screenshot 2025-06-13 010547](https://github.com/user-attachments/assets/9a4c1de7-7a53-48f3-87af-3638d5ebe9af)
-
-## Fitur Utama
-
-- **Enkripsi Teks ke Suara**: Ubah pesan teks menjadi pola suara dengan parameter yang dapat disesuaikan
-- **Dekripsi Suara ke Teks**: Kembalikan file audio terenkripsi menjadi pesan teks asli
-- **Visualisasi Audio**: Analisis spektrogram, bentuk gelombang, dan distribusi frekuensi
-- **Multiple Algoritma**: Pilih antara FSAE Standard, FSAE Enhanced, atau FSAE + AES
-- **Tema Gelap/Terang**: Antarmuka yang nyaman untuk berbagai kondisi pencahayaan
-- **Pengujian Otomatis**: Verifikasi enkripsi/dekripsi dengan satu klik
-
-## Cara Kerja
-
-SonicCipher mengimplementasikan algoritma Frequency-Shift Audio Encryption (FSAE) yang bekerja dengan prinsip dasar:
-
-1. Setiap karakter dalam teks diubah menjadi nilai ASCII
-2. Nilai ASCII dimodifikasi menggunakan kunci enkripsi (shift)
-3. Nilai yang dimodifikasi dipetakan ke frekuensi audio tertentu
-4. Frekuensi-frekuensi ini dikombinasikan untuk membuat pola suara unik
-5. Durasi setiap nada bervariasi berdasarkan posisi karakter dalam pesan
-   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/45b74a78-1198-4046-9f83-0e33e1bd93c4" alt="diagram" width="300"/>
+  <b>Transform Your Messages Into Sound — Where Cryptography Meets Audio Innovation</b>
 </p>
 
-## Instalasi
+---
+
+## 🎧 Tentang SonicCipher
+
+**SonicCipher** adalah aplikasi kriptografi modern yang mengubah teks menjadi audio terenkripsi menggunakan algoritma **Frequency-Shift Audio Encryption (FSAE)**. Tidak seperti metode konvensional yang hanya menghasilkan teks terenkripsi, SonicCipher menyembunyikan pesan Anda dalam bentuk suara — menggabungkan prinsip kriptografi dan steganografi audio.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9a4c1de7-7a53-48f3-87af-3638d5ebe9af" alt="Tampilan Aplikasi" width="600"/>
+</p>
+
+---
+
+## 🔧 Fitur Unggulan
+
+* 🔊 **Enkripsi Teks ke Audio**
+* 🔄 **Dekripsi Audio ke Teks**
+* 🌐 **Dukungan Multi-Algoritma**: FSAE Standard, Enhanced, dan AES Hybrid
+* 🎨 **Visualisasi Spektrogram & Waveform**
+* ✅ **Pengujian Otomatis** untuk validasi proses enkripsi-dekripsi
+
+---
+
+## ⚙️ Cara Kerja
+
+SonicCipher menggunakan alur enkripsi sebagai berikut:
+
+1. Setiap karakter diubah menjadi kode ASCII
+2. Diterapkan pergeseran berdasarkan kunci
+3. Nilai dikonversi ke frekuensi audio tertentu
+4. Nada disintesis menjadi file audio
+5. Untuk varian Enhanced, durasi dan amplitudo juga bervariasi
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45b74a78-1198-4046-9f83-0e33e1bd93c4" alt="Diagram Proses" width="500"/>
+</p>
+
+---
+
+## 💻 Instalasi
 
 ### Prasyarat
 
-- Python 3.6 atau lebih baru
-- Pustaka-pustaka Python: PyQt5, NumPy, SciPy, Matplotlib, Pygame
+* Python >= 3.6
+* Dependensi: `PyQt5`, `NumPy`, `SciPy`, `Matplotlib`, `Pygame`
 
 ### Langkah Instalasi
 
-1. Clone repositori ini:
-   ```bash
-   git clone git@github.com:SirHosen/SonicChipper.git
-   cd SonicCipher
-   ```
+```bash
+git clone git@github.com:SirHosen/SonicChipper.git
+cd SonicCipher
+pip install -r requirements.txt
+python main.py
+```
 
-2. Instal dependensi yang diperlukan:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Jalankan aplikasi:
-   ```bash
-   python main.py
-   ```
-
-### Membuat File Executable (Opsional)
-
-Untuk membuat file .exe yang dapat dijalankan di Windows tanpa instalasi Python:
+### Build ke Executable (Opsional)
 
 ```bash
 pip install pyinstaller
 pyinstaller --onefile --windowed --add-data "resources;resources" main.py
 ```
 
-File .exe akan tersedia di folder `dist`.
+Output akan berada di folder `dist/`.
 
-## Penggunaan
+---
 
-### Enkripsi Teks ke Suara
+## ▶️ Panduan Penggunaan
 
-1. Buka tab "Enkripsi"
-2. Masukkan pesan yang ingin dienkripsi
-3. Atur parameter enkripsi:
-   - Kunci Enkripsi (1-25)
-   - Frekuensi Dasar (200-500 Hz)
-   - Durasi Dasar (50-500 ms)
-   - Algoritma (Standard, Enhanced, AES)
-4. Klik "Enkripsi ke Suara"
-5. Gunakan tombol "Putar Suara" untuk mendengarkan hasil
-6. Simpan file audio dengan tombol "Simpan Suara"
+### 🔊 Enkripsi Teks ke Audio
 
+1. Buka tab **Enkripsi**
+2. Masukkan pesan
+3. Atur parameter: kunci, frekuensi dasar, durasi, algoritma
+4. Klik **Enkripsi ke Suara**
+5. Putar atau simpan audio hasil
 
+### 🔒 Dekripsi Audio ke Teks
 
-### Dekripsi Suara ke Teks
+1. Buka tab **Dekripsi**
+2. Pilih file audio
+3. Atur parameter sesuai dengan yang digunakan saat enkripsi
+4. Klik **Dekripsi Suara**
 
-1. Buka tab "Dekripsi"
-2. Pilih file audio terenkripsi
-3. Atur parameter dekripsi:
-   - Kunci Dekripsi (harus sama dengan kunci enkripsi)
-   - Toleransi Frekuensi (1-20%)
-   - Metode Dekripsi (Otomatis, Gunakan Metadata, Analisis Audio)
-4. Klik "Dekripsi Suara"
-5. Lihat hasil dekripsi di area teks
+### 🎨 Visualisasi Audio
 
-![Decryption Tab](https://placeholder-for-decryption-tab.png)
-
-### Visualisasi Audio
-
-1. Buka tab "Visualisasi"
-2. Pilih file audio untuk dianalisis
+1. Buka tab **Visualisasi**
+2. Pilih file audio
 3. Pilih jenis visualisasi (Spektrogram, Waveform, dll.)
-4. Atur parameter visualisasi
-5. Klik "Analisis"
-6. Ekspor gambar jika diperlukan
+4. Klik **Analisis** untuk melihat grafik
 
-![Visualization Tab](https://placeholder-for-visualization-tab.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90ffd63b-6c90-42eb-8479-9ff4706a0d30" alt="Visualisasi Audio" width="600"/>
+</p>
 
-## Struktur Proyek
+---
+
+## 📁 Struktur Proyek
 
 ```
 SonicCipher/
-│
-├── main.py                # File utama untuk menjalankan aplikasi
-├── ui_design.py           # Desain antarmuka pengguna
-├── audio_processor.py     # Pemrosesan audio dan algoritma FSAE
-├── visualizer.py          # Visualisasi audio
-├── utils.py               # Fungsi-fungsi utilitas
-│
-├── resources/             # Folder untuk ikon dan resource lainnya
-│   ├── icon.png
-│   ├── logo.png
-│   └── ...
-│
-├── requirements.txt       # Daftar dependensi
+├── main.py                # Entry point aplikasi
+├── ui_design.py           # UI dengan PyQt
+├── audio_processor.py     # Algoritma FSAE & manipulasi audio
+├── visualizer.py          # Modul visualisasi
+├── utils.py               # Fungsi bantu
+├── resources/             # Ikon dan aset lainnya
+├── requirements.txt       # Dependensi Python
 └── README.md              # Dokumentasi proyek
 ```
 
-## Arsitektur Software
+---
 
-SonicCipher dibangun dengan arsitektur modular yang terdiri dari tiga lapisan utama:
+## 💡 Arsitektur Sistem
 
-1. **Lapisan Presentasi**: Menangani antarmuka pengguna dan visualisasi
-2. **Lapisan Logika Bisnis**: Menangani algoritma FSAE dan pemrosesan audio
-3. **Lapisan Data**: Menangani penyimpanan dan pembacaan file audio dan metadata
+Aplikasi ini menggunakan pendekatan **modular 3-layer**:
 
-![Software Architecture](https://placeholder-for-architecture-diagram.png)
+1. **Presentasi**: UI dan interaksi pengguna
+2. **Logika Bisnis**: Pemrosesan teks dan audio
+3. **Data**: Penyimpanan file audio dan metadata
 
-## Algoritma FSAE
-
-Algoritma FSAE tersedia dalam tiga varian:
-
-1. **FSAE Standard**: Implementasi dasar dengan durasi tetap untuk semua karakter
-2. **FSAE Enhanced**: Menambahkan variasi durasi dan amplitudo berdasarkan karakter dan posisinya
-3. **FSAE + AES**: Kombinasi FSAE dengan enkripsi AES untuk keamanan tambahan
-
-Proses enkripsi FSAE secara matematis dapat dirumuskan sebagai berikut:
-
-1. Konversi karakter ke ASCII:
-   ```
-   P = ASCII(char)
-   ```
-
-2. Penerapan shift menggunakan kunci:
-   ```
-   C = (P + K) % 256
-   ```
-
-3. Pemetaan ke frekuensi audio:
-   ```
-   F = F_base + (C / 256) × F_range
-   ```
-
-4. Variasi durasi berdasarkan posisi (untuk FSAE Enhanced):
-   ```
-   D = D_base + (i % 5) × 0.05
-   ```
-
-5. Sintesis audio menggunakan gelombang sinus:
-   ```
-   s(t) = A × sin(2πFt)
-   ```
-
-## Pemecahan Masalah
-
-### Metadata Tidak Ditemukan
-
-**Masalah**: Saat dekripsi, muncul pesan "File metadata tidak ditemukan. Dekripsi mungkin kurang akurat."
-
-**Solusi**:
-- Pastikan file metadata (.wav.metadata) berada di lokasi yang sama dengan file audio
-- Coba simpan ulang file audio terenkripsi
-- Gunakan metode dekripsi "Analisis Audio" jika metadata tidak tersedia
-- Sesuaikan parameter dekripsi manual (frekuensi dasar, toleransi)
-
-### Dekripsi Tidak Akurat
-
-**Masalah**: Hasil dekripsi tidak sesuai dengan pesan asli
-
-**Solusi**:
-- Pastikan menggunakan kunci dekripsi yang sama dengan kunci enkripsi
-- Sesuaikan toleransi frekuensi (coba nilai antara 5-10%)
-- Jika tidak menggunakan metadata, pastikan frekuensi dasar yang dimasukkan sama dengan yang digunakan saat enkripsi
-- Coba berbagai kombinasi parameter hingga mendapatkan hasil yang benar
-
-### Audio Tidak Terdengar
-
-**Masalah**: Audio tidak terdengar atau terputus-putus
-
-**Solusi**:
-- Pastikan perangkat audio (speaker/headphone) terhubung dan berfungsi
-- Periksa volume sistem dan aplikasi
-- Coba simpan audio dan putar dengan aplikasi lain
-- Restart aplikasi jika masalah berlanjut
-
-## Kontribusi
-
-Kontribusi untuk pengembangan SonicCipher sangat diterima. Untuk berkontribusi:
-
-1. Fork repositori
-2. Buat branch untuk fitur baru (`git checkout -b feature/New`)
-3. Commit perubahan Anda (`git commit -m 'Add some New'`)
-4. Push ke branch (`git push origin feature/New`)
-5. Buka Pull Request
-
-## Pengembangan Lanjutan
-
-Beberapa arah pengembangan lanjutan untuk SonicCipher:
-
-- Peningkatan keamanan kunci
-- Optimasi ukuran file audio
-- Peningkatan algoritma dekripsi tanpa metadata
-- Ekspansi ke platform mobile
-- Penerapan dalam komunikasi real-time
-
-## Lisensi
-
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
-
-## Kontak
-
-SirHosen - hoseaoktarivanes@gmail.com
-
-Link Proyek: [https://github.com/SirHosen/SonicChippe](https://github.com/SirHosen/SonicChipper)
-
-## Pengakuan
-
-- [PyQt5](https://www.riverbankcomputing.com/software/pyqt/)
-- [NumPy](https://numpy.org/)
-- [SciPy](https://scipy.org/)
-- [Matplotlib](https://matplotlib.org/)
-- [Pygame](https://www.pygame.org/)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fa36e5a9-2d62-4344-b348-2571cb8c7b6a" alt="Arsitektur Software" width="600"/>
+</p>
 
 ---
+
+## 🔠 Detail Algoritma FSAE
+
+### Formula Enkripsi:
+
+```
+1. P = ASCII(char)
+2. C = (P + K) % 256
+3. F = F_base + (C / 256) × F_range
+4. D = D_base + (i % 5) × 0.05  # (Enhanced only)
+5. s(t) = A × sin(2πFt)
+```
+
+### Varian:
+
+* **FSAE Standard**: Durasi tetap
+* **FSAE Enhanced**: Durasi & amplitudo variatif
+* **FSAE + AES**: Kombinasi dengan enkripsi AES untuk keamanan ganda
+
+---
+
+## ⚠️ Pemecahan Masalah
+
+### "Metadata Tidak Ditemukan"
+
+* Pastikan file `.metadata` ada di lokasi yang sama
+* Gunakan mode "Analisis Audio" jika perlu
+
+### "Dekripsi Tidak Akurat"
+
+* Periksa kunci dan parameter frekuensi
+* Sesuaikan toleransi (5-10%)
+
+### "Audio Tidak Terdengar"
+
+* Periksa koneksi speaker/headset
+* Uji di media player eksternal
+
+---
+
+## ✨ Kontribusi
+
+1. Fork repositori ini
+2. Buat branch baru: `feature/NamaFitur`
+3. Commit & push perubahan Anda
+4. Ajukan Pull Request
+
+---
+
+## 🚀 Roadmap Pengembangan
+
+* Peningkatan algoritma tanpa metadata
+* Implementasi versi mobile (Android/iOS)
+* Real-time audio transmission
+* Optimasi ukuran file audio
+* UI/UX yang lebih dinamis
+
+---
+
+## 🔒 Lisensi
+
+Proyek ini didistribusikan di bawah Lisensi **MIT**. Lihat file `LICENSE` untuk detail.
+
+---
+
+## 📢 Kontak & Tautan
+
+* **Developer**: SirHosen
+* **Email**: [hoseaoktarivanes@gmail.com](mailto:hoseaoktarivanes@gmail.com)
+* **Repo**: [github.com/SirHosen/SonicChipper](https://github.com/SirHosen/SonicChipper)
