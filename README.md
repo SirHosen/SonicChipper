@@ -39,11 +39,6 @@ SonicCipher menggunakan alur enkripsi sebagai berikut:
 3. Nilai dikonversi ke frekuensi audio tertentu
 4. Nada disintesis menjadi file audio
 5. Untuk varian Enhanced, durasi dan amplitudo juga bervariasi
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/45b74a78-1198-4046-9f83-0e33e1bd93c4" alt="Diagram Proses" width="500"/>
-</p>
-
 ---
 
 ## 💻 Instalasi
